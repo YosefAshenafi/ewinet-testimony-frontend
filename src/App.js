@@ -5,18 +5,14 @@ import Login from "./pages/login/login";
 import Single from "./pages/single/single";
 // import Write from "./pages/write/write";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import './App.css';
 import Register from "./pages/register/register";
-import Write from "./pages/write/write";
 import Setting from "./pages/settings/setting";
-
-
-
+import Write from "./pages/write/write";
 
 function App() {
   const currentUser = false;
   return (
-
-
     <Router>
       <TopBar />
       <Switch>
@@ -41,8 +37,6 @@ function App() {
 
       </Switch>
     </Router>
-
-
   );
 }
 

@@ -8,7 +8,6 @@ export default function TopBar() {
   return (
     <div className="top">
       <div className="topLeft">
-        {/* <h1>Ewnet</h1> */}
         <img className="header_icon" src={image} alt="logo" />
       </div>
       {/* <div className="header_center">

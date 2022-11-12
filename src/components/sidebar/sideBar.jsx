@@ -6,14 +6,20 @@ import './sideBar.css';
 
 export default function SideBar() {
     const [cats, setCats] = useState([]);
+    const [hashtags, setHashtags] = useState([]);
 
     useEffect(() => {
         const getCats = async () => {
             const res = await axios.get("/categories");
-            console.log(res.data)
             setCats(res.data);
         };
+        const getHashtags = async () => {
+            const res = await axios.get("/hashtag");
+
+            setHashtags(res.data);
+        }
         getCats();
+        getHashtags();
     }, []);
 
     return (
@@ -32,6 +38,19 @@ export default function SideBar() {
 
                     {cats.map((c) => (
                         <Link to={`/?cat=${c.name}`} className="link">
+                            <li className="sidebarListItem">{c.name}</li>
+                        </Link>
+                    ))}
+
+
+                </ul>
+            </div>
+            <div className='sidebarItem'>
+                <span className='sidebarTitle'>HASH TAGS</span>
+                <ul className="sidebarList">
+
+                    {hashtags.map((c) => (
+                        <Link to={`/?hash=${c.name}`} className="link">
                             <li className="sidebarListItem">{c.name}</li>
                         </Link>
                     ))}

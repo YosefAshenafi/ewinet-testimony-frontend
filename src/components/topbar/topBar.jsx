@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./topBar.css";
-import SearchIcon from '@material-ui/icons/Search';
 
 
 export default function TopBar() {
@@ -52,7 +51,6 @@ export default function TopBar() {
             </li>
           </ul>
         )}
-        <i className="topSearchIcon fas fa-search" />
       </div>
     </div>
   )

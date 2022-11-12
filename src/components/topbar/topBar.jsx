@@ -7,7 +7,8 @@ export default function TopBar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <img className='header_icon' src='https://firebasestorage.googleapis.com/v0/b/flutter-firebase-crud-d224b.appspot.com/o/Dink-Testimony.png?alt=media&token=765fb649-69f3-4753-b3da-3b8a04f70541' alt='' />
+        <h1>Ewnet</h1>
+        {/* <img className='header_icon' src='https://firebasestorage.googleapis.com/v0/b/flutter-firebase-crud-d224b.appspot.com/o/Dink-Testimony.png?alt=media&token=765fb649-69f3-4753-b3da-3b8a04f70541' alt='' /> */}
       </div>
       {/* <div className="header_center">
         <input type="text" placeholder='Search Something' />

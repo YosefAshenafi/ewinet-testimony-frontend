@@ -1,17 +1,19 @@
 import TopBar from "./components/topbar/topBar";
 import Home from "./pages/home/home";
 import Login from "./pages/login/login";
-// import Setting from "./pages/settings/setting";
 import Single from "./pages/single/single";
-// import Write from "./pages/write/write";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Register from "./pages/register/register";
 import Setting from "./pages/settings/setting";
-import Write from "./pages/write/write";
+
+import { useContext } from "react";
+import { Context } from "./context/Context";
+import { Write } from "../../blog-client/src/pages/write/write"
+
 
 function App() {
-  const currentUser = false;
+  const { user } = useContext(Context);
   return (
     <Router>
       <TopBar />
@@ -19,17 +21,18 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
+
         <Route path="/register">
-          {currentUser ? <Home /> : <Register />}
+          {user ? <Home /> : <Register />}
         </Route>
         <Route path="/login">
-          {currentUser ? <Home /> : <Login />}
+          {user ? <Home /> : <Login />}
         </Route>
         <Route path="/write">
-          {currentUser ? <Write /> : <Register />}
+          {user ? <Write /> : <Register />}
         </Route>
         <Route path="/settings">
-          {currentUser ? <Setting /> : <Register />}
+          {user ? <Setting /> : <Register />}
         </Route>
         <Route path="/post/:postId">
           <Single />

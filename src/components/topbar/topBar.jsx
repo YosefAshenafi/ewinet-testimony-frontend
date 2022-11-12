@@ -14,10 +14,10 @@ export default function TopBar() {
 
         <SearchIcon />
       </div> */}
-      <div class='search-box'>
-        <input class="search-text" type="text" placeholder="Search Anything" />
-        <a href="#" class="search-btn">
-          <i class="fas fa-search"></i>
+      <div className='search-box'>
+        <input className="search-text" type="text" placeholder="Search Anything" />
+        <a href="#" className="search-btn">
+          <i className="fas fa-search"></i>
         </a>
       </div>
 

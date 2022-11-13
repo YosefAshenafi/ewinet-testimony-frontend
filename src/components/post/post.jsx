@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import TextTruncate from 'react-text-truncate';
 import './post.css';
+import { Link } from "react-router-dom";
+
 
 export default function Post({ post }) {
     const PF = "http://localhost:5000/images/";
@@ -11,9 +13,9 @@ export default function Post({ post }) {
             {post.photo &&
                 <Card.Img variant="top" src={PF + post.photo} alt='' />
             }
-            {/* <Card.Img variant="top" src="http://themes.pcubelive.com/pcubeblog/images/b3.jpg" /> */}
             <Card.Body>
-                <Card.Title>{post.title}</Card.Title>
+                <Link to={`/post/${post._id}`} className="link">
+                    <Card.Title>{post.title}</Card.Title></Link>
                 <Card.Text className="post-date">{new Date(post.createdAt).toDateString()}</Card.Text>
                 <TextTruncate
                     line={3}
@@ -21,7 +23,7 @@ export default function Post({ post }) {
                     truncateText="…"
                     text={post.desc}
                 />
-                <Button variant="info mt-2 text-light">Read More</Button>
+                <Link to={`/post/${post._id}`} className="link"><Button variant="info mt-2 text-light">Read More</Button></Link>
             </Card.Body>
         </Card>
     )

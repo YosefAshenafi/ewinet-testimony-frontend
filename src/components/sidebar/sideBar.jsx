@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-import image from '../../image/logo.jpg';
+import image from '../../image/logo.png';
 import './sideBar.css';
 
 

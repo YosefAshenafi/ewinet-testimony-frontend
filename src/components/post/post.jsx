@@ -9,9 +9,9 @@ export default function Post({ post }) {
     return (
         <Card className="post-panel">
             {post.photo &&
-                <Card.Img variant="top" ssrc={PF + post.photo} alt='' />
+                <Card.Img variant="top" src={PF + post.photo} alt='' />
             }
-            <Card.Img variant="top" src="http://themes.pcubelive.com/pcubeblog/images/b3.jpg" />
+            {/* <Card.Img variant="top" src="http://themes.pcubelive.com/pcubeblog/images/b3.jpg" /> */}
             <Card.Body>
                 <Card.Title>{post.title}</Card.Title>
                 <Card.Text className="post-date">{new Date(post.createdAt).toDateString()}</Card.Text>

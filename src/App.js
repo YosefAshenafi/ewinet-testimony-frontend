@@ -12,6 +12,7 @@ import { useContext } from "react";
 import { Context } from "./context/Context";
 import Write from "./pages/write/write";
 import Footer from "./components/footer/footer";
+import Religion from './pages/Religion/religion';
 
 
 

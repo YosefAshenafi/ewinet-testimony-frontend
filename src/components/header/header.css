@@ -1,5 +1,5 @@
 .header{
-    /* margin-top: 60px; */
+    /* width: 200vw; */
 }
 .headerTitles{
     display: flex;
@@ -20,7 +20,10 @@
 }
 .headerImg{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     /* margin-top: 80px; */
     object-fit: cover;
+}
+.header_icon {
+    width: 100px;
 }

@@ -1,7 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import TopBar from "./components/topbar/topBar";
 import Home from "./pages/home/home";
 import Login from "./pages/login/login";
 import Single from "./pages/single/single";
+// import Write from "./pages/write/write";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Register from "./pages/register/register";
@@ -9,10 +11,10 @@ import Setting from "./pages/settings/setting";
 
 
 import { useContext } from "react";
-import { Context } from "./context/Context";
-import Write from "./pages/write/write";
 import Footer from "./components/footer/footer";
+import { Context } from "./context/Context";
 import Religion from './pages/Religion/religion';
+import Write from "./pages/write/write";
 
 
 

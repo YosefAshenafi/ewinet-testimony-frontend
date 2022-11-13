@@ -1,46 +1,28 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import TextTruncate from 'react-text-truncate'; // recommend
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import TextTruncate from 'react-text-truncate';
 import './post.css';
 
 export default function Post({ post }) {
     const PF = "http://localhost:5000/images/";
     return (
-        <div className='post'>
-
-
+        <Card className="post-panel">
             {post.photo &&
-                <img className="postImg" src={PF + post.photo} alt='' />
-
-
+                <Card.Img variant="top" ssrc={PF + post.photo} alt='' />
             }
-            <div className='postInfo'>
-                <div className='postCats'>
-                    {post.categories.map(c => {
-                        <span className='postCat'>{c.name}</span>
-                    })}
-                </div>
-                <Link to={`/post/${post._id}`} className='link'>
-                    <span className="postTitle">
-                        {post.title}
-                    </span>
-                </Link>
-                <hr />
-                <span className='postDate'>{new Date(post.createdAt).toDateString()}</span>
-            </div>
-            <Link to={`/post/${post._id}`} className='link'>
-                <p className="postDesc">
-                    <TextTruncate
-                        line={3}
-                        element="span"
-                        truncateText="…"
-                        text={post.desc}
-                        textTruncateChild={<div href="#" className='read-more'><a>Read on</a></div>}
-                    />
-
-                </p>
-            </Link>
-
-        </div>
+            <Card.Img variant="top" src="http://themes.pcubelive.com/pcubeblog/images/b3.jpg" />
+            <Card.Body>
+                <Card.Title>{post.title}</Card.Title>
+                <Card.Text className="post-date">{new Date(post.createdAt).toDateString()}</Card.Text>
+                <TextTruncate
+                    line={3}
+                    element="div"
+                    truncateText="…"
+                    text={post.desc}
+                />
+                <Button variant="info mt-2 text-light">Read More</Button>
+            </Card.Body>
+        </Card>
     )
 }

@@ -1,3 +1,19 @@
+.posts-panel{
+    margin-top: 10px;
+}
+.post-panel {
+    width: 20rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 1px 0px 29px -13px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 0px 29px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 29px -13px rgba(0,0,0,0.75);
+}
+.post-date {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+}
 .border {
     position: relative;
     border: 0px solid #ddd;
@@ -67,7 +83,7 @@
     text-align: center;
 }
 .read-more {
-    margin-top: 10px !important;
+    margin-top: 30px !important;
     text-decoration: none;
     border: 1px solid black;
     padding: 10px;
@@ -78,4 +94,15 @@
     width: 100px;
     margin-left: 125px;
     cursor: pointer;
+}
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 85px;
+    font-size: 20px;
+    align-items: center;
+    padding-left: auto !important;
+    padding-right: auto;
 }

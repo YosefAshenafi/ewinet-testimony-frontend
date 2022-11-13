@@ -70,6 +70,9 @@ export default function TopBar() {
               <Nav.Link><Link className="link" to="/write">
                 Write
               </Link></Nav.Link>
+              <Nav.Link><Link className="link" onClick={handleLogout}>
+                {user && "LOGOUT"}
+              </Link></Nav.Link>
               <Nav.Link ><Link className="link" to="/contactus">Contact Us</Link></Nav.Link>
               <Nav.Link href="#action12" className="login-btn">
                 <Link className="link" to="/login">

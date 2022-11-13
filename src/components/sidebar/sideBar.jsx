@@ -23,8 +23,7 @@ export default function SideBar() {
                 <span className='sidebarTitle'>ABOUT US</span>
                 <img src={image} alt='' />
                 <p>
-                    Laboris sunt aute cupidatat velit magna velit ullamco dolore mollit
-                    amet ex esse.Sunt eu ut nostrud id quis proident.
+                    Ewnetegna Testimony is a web application that serves as a factual source of truth to "curious" people as they encounter different doubts and insecurities.
                 </p>
             </div>
             <div className='sidebarItem'>

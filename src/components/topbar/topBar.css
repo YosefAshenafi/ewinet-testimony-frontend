@@ -20,6 +20,15 @@
     padding:0px;
     outline-width: 0;
 }
+
+.register-btn {
+    margin-left : 2px;
+}
+
+.login-btn {
+    margin-right: 3px !important;
+}
+
 .top{
     background-color: white;
     width: 100%;
@@ -29,7 +38,7 @@
     display: flex;
     align-items: center;
     z-index: 999;
-    font-family: "Josefin Sans",sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .topLeft,.topRight{
@@ -62,21 +71,24 @@
     padding:0;
     list-style: none;
 }
+
 .topListItem{
     margin-right: 20px;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 500;
     cursor: pointer;
 }
+
+.active {
+    color: #077ed0;
+}
+
 .topSearchIcon{
     font-size: 18px;
     color:#666;
     cursor: pointer;
     margin-left: 15px;
 }
-
-
-
 
 .search-box {
     position: absolute;

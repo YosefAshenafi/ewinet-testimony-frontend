@@ -3,6 +3,7 @@ import TopBar from "./components/topbar/topBar";
 import Home from "./pages/home/home";
 import Login from "./pages/login/login";
 import Single from "./pages/single/single";
+import Videos from "./pages/videos/videos";
 // import Write from "./pages/write/write";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
@@ -24,7 +25,9 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-
+        <Route path="/videos">
+          <Videos />
+        </Route>
         <Route path="/register">
           {user ? <Home /> : <Register />}
         </Route>

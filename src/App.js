@@ -9,7 +9,9 @@ import Setting from "./pages/settings/setting";
 
 import { useContext } from "react";
 import { Context } from "./context/Context";
-import { Write } from "../../blog-client/src/pages/write/write"
+import Write from "./pages/write/write";
+import Footer from "./components/footer/footer";
+
 
 
 function App() {
@@ -39,6 +41,7 @@ function App() {
         </Route>
 
       </Switch>
+      <Footer />
     </Router>
   );
 }

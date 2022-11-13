@@ -26,14 +26,14 @@ export default function TopBar() {
       {/* <div className="header_center">
         <input type="text" placeholder='Search Something' />
 
-        <SearchIcon />
+
       </div> */}
-      <div className='search-box'>
+      {/* <div className='search-box'>
         <input className="search-text" type="text" placeholder="Search Anything" />
         <a href="#" className="search-btn">
           <i className="fas fa-search"></i>
         </a>
-      </div>
+      </div> */}
 
       <div className="topCenter">
         <ul className="topList">

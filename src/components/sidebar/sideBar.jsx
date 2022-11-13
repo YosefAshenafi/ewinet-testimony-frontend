@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import './sideBar.css';
+import image from "../../image/logo.jpg"
 
 
 export default function SideBar() {
@@ -26,10 +27,9 @@ export default function SideBar() {
         <div className="sidebar">
             <div className='sidebarItem'>
                 <span className='sidebarTitle'>ABOUT ME</span>
-                <img src="https://images.pexels.com/photos/6711867/pexels-photo-6711867.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt='' />
+                <img src={image} alt='' />
                 <p>
-                    Laboris sunt aute cupidatat velit magna velit ullamco dolore mollit
-                    amet ex esse.Sunt eu ut nostrud id quis proident.
+                    Ewinet Testimony Platform is
                 </p>
             </div>
             <div className='sidebarItem'>
@@ -38,11 +38,9 @@ export default function SideBar() {
 
                     {cats.map((c) => (
                         <Link to={`/?cat=${c.name}`} className="link">
-                            <li className="sidebarListItem">{c.name}</li>
+                            <li className="sidebarListItem">{c.name}</li>&nbsp;
                         </Link>
                     ))}
-
-
                 </ul>
             </div>
             <div className='sidebarItem'>
@@ -51,7 +49,7 @@ export default function SideBar() {
 
                     {hashtags.map((c) => (
                         <Link to={`/?hash=${c.name}`} className="link">
-                            <li className="sidebarListItem">{c.name}</li>
+                            <li className="sidebarListItem">{c.name}</li>&nbsp;
                         </Link>
                     ))}
 

@@ -26,16 +26,18 @@ export default function Post({ post }) {
                 <hr />
                 <span className='postDate'>{new Date(post.createdAt).toDateString()}</span>
             </div>
-            <p className="postDesc">
-                <TextTruncate
-                    line={3}
-                    element="span"
-                    truncateText="…"
-                    text={post.desc}
-                    textTruncateChild={<div href="#" className='read-more'><a>Read on</a></div>}
-                />
+            <Link to={`/post/${post._id}`} className='link'>
+                <p className="postDesc">
+                    <TextTruncate
+                        line={3}
+                        element="span"
+                        truncateText="…"
+                        text={post.desc}
+                        textTruncateChild={<div href="#" className='read-more'><a>Read on</a></div>}
+                    />
 
-            </p>
+                </p>
+            </Link>
         </div>
     )
 }

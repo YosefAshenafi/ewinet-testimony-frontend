@@ -10,6 +10,9 @@ export default function Write() {
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
     const [file, setFile] = useState(null);
+    const [categories, setCategories] = useState("");
+    const [hashtags, setHashTags] = useState("");
+
     const { user } = useContext(Context);
 
     const handleSubmit = async (e) => {
@@ -18,6 +21,9 @@ export default function Write() {
             username: user.username,
             title,
             desc,
+            categories,
+            hashtags
+
         };
         if (file) {
             const data = new FormData();
@@ -59,10 +65,30 @@ export default function Write() {
                         autoFocus={true}
                         onChange={e => setTitle(e.target.value)}
                     />
+
                 </div>
+                <div className="writeFormGroupcat">
+                    <input
+                        type="text"
+                        placeholder="category"
+                        className="writeInput  "
+                        autoFocus={true}
+                        onChange={e => setCategories(e.target.value)}
+                    />
+                </div>
+                <div className="writeFormGroupcat">
+                    <input
+                        type="text"
+                        placeholder="hashtags"
+                        className="writeInput  "
+                        autoFocus={true}
+                        onChange={e => setHashTags(e.target.value)}
+                    />
+                </div>
+
                 <div className="writeFormGroup">
                     <textarea
-                        placeholder="Tell your story..."
+                        placeholder="Tell your Testimony..."
                         type="text"
                         className="writeInput writeText"
                         onChange={e => setDesc(e.target.value)}

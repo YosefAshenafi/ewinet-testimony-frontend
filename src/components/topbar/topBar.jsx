@@ -6,7 +6,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from "react-router-dom";
 import { Context } from '../../context/Context';
-import image from '../../image/logo.jpg';
+import image from '../../image/logo.png';
+
 import "./topBar.css";
 
 

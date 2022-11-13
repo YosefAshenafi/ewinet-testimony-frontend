@@ -7,10 +7,12 @@ import './App.css';
 import Register from "./pages/register/register";
 import Setting from "./pages/settings/setting";
 
+
 import { useContext } from "react";
 import { Context } from "./context/Context";
 import Write from "./pages/write/write";
 import Footer from "./components/footer/footer";
+
 
 
 
@@ -39,7 +41,9 @@ function App() {
         <Route path="/post/:postId">
           <Single />
         </Route>
-
+        <Route path="/religion">
+          <Religion />
+        </Route>
       </Switch>
       <Footer />
     </Router>

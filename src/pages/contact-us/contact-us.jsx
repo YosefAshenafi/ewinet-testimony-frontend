@@ -10,7 +10,7 @@ export default function ContactUs() {
                 <div class="form">
                     <h4>GET IN TOUCH</h4>
                     <h2 class="form-headline">Send us a message</h2>
-                    <form id="submit-form" action="">
+                    <div className="submit-form" action="">
                         <p>
                             <input id="name" class="form-input" type="text" placeholder="Your Name*" />
                             <small class="name-error"></small>
@@ -31,7 +31,7 @@ export default function ContactUs() {
                         <p class="full-width">
                             <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()" />
                         </p>
-                    </form>
+                    </div>
                 </div>
 
                 <div class="contacts contact-wrapper">
@@ -41,12 +41,12 @@ export default function ContactUs() {
                             billion</span> for our clients. Ready to know
                             how we can help you?</li>
                         <span class="hightlight-contact-info">
-                            <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> info@demo.com</li>
-                            <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+91 11 1111 2900</span></li>
+                            <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> info@ewunet.com</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+ --- --- ---   </span></li>
                         </span>
                     </ul>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

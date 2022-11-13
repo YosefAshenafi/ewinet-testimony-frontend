@@ -8,16 +8,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Register from "./pages/register/register";
 import Setting from "./pages/settings/setting";
-
-
 import { useContext } from "react";
 import Footer from "./components/footer/footer";
 import { Context } from "./context/Context";
 import Religion from './pages/Religion/religion';
 import Write from "./pages/write/write";
-
-
-
+import ContactUs from './pages/contact-us/contact-us';
 
 function App() {
   const { user } = useContext(Context);
@@ -46,6 +42,9 @@ function App() {
         </Route>
         <Route path="/religion">
           <Religion />
+        </Route>
+        <Route path="/contactus">
+          <ContactUs />
         </Route>
       </Switch>
       <Footer />

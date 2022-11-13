@@ -22,23 +22,15 @@ export default function TopBar() {
     <div className="top">
       <div className="topLeft">
         <img className="header_icon" src={image} alt="logo" />
+
+
       </div>
-
-      <div className='search-box'>
-
-      <div className='search-box'>
-
-        <input className="search-text" type="text" placeholder="Search Anything" />
-        <a href="#" className="search-btn">
-          <i className="fas fa-search"></i>
-        </a>
-      </div> */}
-
       <div className="topCenter">
         <ul className="topList">
           <li className="topListItem active"> <Link className="link" to="/">
             HOME
           </Link></li>
+
           <li className="topListItem">TESTIMONY</li>
           {/* <li className="topListItem">CONTACT</li> */}
           <li className="topListItem"><Link className="link" to="/write">

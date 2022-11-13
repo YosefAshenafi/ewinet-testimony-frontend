@@ -8,8 +8,10 @@ export default function Post({ post }) {
     return (
         <div className='post'>
 
+
             {post.photo &&
                 <img className="postImg" src={PF + post.photo} alt='' />
+
 
             }
             <div className='postInfo'>
@@ -38,6 +40,7 @@ export default function Post({ post }) {
 
                 </p>
             </Link>
+
         </div>
     )
 }

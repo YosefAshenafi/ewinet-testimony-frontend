@@ -9,6 +9,7 @@ import axios from "axios";
 import image from "../../image/grad_in_phone.png"
 
 
+
 export default function Home() {
     const [posts, setPosts] = useState([]);
     const { search } = useLocation();
@@ -54,6 +55,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
         </>
     )
 }

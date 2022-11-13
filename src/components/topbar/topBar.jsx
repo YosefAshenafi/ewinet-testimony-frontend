@@ -65,7 +65,9 @@ export default function TopBar() {
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link>
-                Videos
+                <Link className="link" to="/videos">
+                  Videos
+                </Link>
               </Nav.Link>
               <Nav.Link><Link className="link" to="/write">
                 Write
@@ -73,12 +75,12 @@ export default function TopBar() {
               <Nav.Link ><Link className="link" to="/contactus">Contact Us</Link></Nav.Link>
               <Nav.Link href="#action12" className="login-btn">
                 <Link className="link" to="/login">
-                  LOGIN
+                  Login           |
                 </Link>
               </Nav.Link>
               <Nav.Link><li className="topListItem">
                 <Link className="link" to="/register">
-                  REGISTER
+                  Register
                 </Link>
               </li>
               </Nav.Link>
@@ -92,7 +94,6 @@ export default function TopBar() {
                 </div>
               </Nav.Link>
             </Nav>
-
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

@@ -48,9 +48,7 @@ export default function SideBar() {
                 <ul className="sidebarList">
 
                     {hashtags.map((c) => (
-                        <Link to={`/?hash=${c.name}`} className="link">
-                            <li className="sidebarListItem">{c.name}</li>&nbsp;
-                        </Link>
+                        <li className="sidebarListItem">{c.name}</li>
                     ))}
 
 
